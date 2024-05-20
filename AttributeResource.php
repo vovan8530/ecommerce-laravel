@@ -18,7 +18,7 @@ class AttributeResource extends JsonResource
     public function toArray($request): array
     {
         /* @var Attribute|self $this */
-        return array_merge([
+        return [
             'id' => $this->id,
 
             'alias' => $this->alias,
@@ -26,6 +26,6 @@ class AttributeResource extends JsonResource
             'display_order' => $this->display_order,
 
             'attribute_options' => AttributeOptionResource::collection($this->whenLoaded('attributeOptions'))
-        ]);
+        ];
     }
 }
