@@ -16,14 +16,13 @@ class AttributeOptionResource extends JsonResource {
   public function toArray($request): array {
     /* @var AttributeOption|self $this */
     return [
-      'id' => $this->id,
-
+      	    'id' => $this->id,
+	    
 	    'alias' => $this->alias,
 	    'attribute_id' => $this->attribute_id,
-
 	    'title' => $this->title,
-
 	    'display_order' => $this->display_order,
+	    
 	    'attribute' => new AttributeResource($this->whenLoaded('attribute'))
     ];
   }
