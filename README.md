@@ -9,3 +9,6 @@ attrebute_options багато до багатьох і категорії з at
 3. Для відображення на фронтенді проекту. За категориями ми тягнемо attrebutes з attrebute_options і products у яких вкладені attrebute_options і attrebutes відповідно. Там ми можемо їх відфільтрувати та відобразити з їх характеристиками.
 4. Створив ресурси моделей сутностей для відображення залежностей, та вкладеності даних.
 [Category resourse](CategoryResource.php)
+[Product resourse](ProductResource.php)
+[Attribute resourse](AttributeResource.php)
+[Attribute options resourse](AttributeOptionResource.php)
