@@ -24,7 +24,7 @@ class AttributeOptionResource extends JsonResource {
 	    'title' => $this->title,
 
 	    'display_order' => $this->display_order,
-		'attribute' => new AttributeResource($this->whenLoaded('attribute'))
+	    'attribute' => new AttributeResource($this->whenLoaded('attribute'))
     ];
   }
 }
