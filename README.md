@@ -1,4 +1,4 @@
 # Ecommerce-laravel
 
 
-![alt text](http://url/to/img.png)
+![shema shop](shop.example.png)
