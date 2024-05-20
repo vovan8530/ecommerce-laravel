@@ -17,7 +17,7 @@ class ProductResource extends JsonResource
     public function toArray($request): array
     {
         /* @var Product|self $this */
-        return array_merge([
+        return [
             'id' => $this->id,
 
             'alias' => $this->alias,
@@ -35,8 +35,6 @@ class ProductResource extends JsonResource
             'attributeOptions' => AttributeOptionResource::collection($this->whenLoaded('attributeOptions')),
             'category' => new CategoryResource($this->whenLoaded('category')),
 
-        ]);
+        ];
     }
-
-
 }
